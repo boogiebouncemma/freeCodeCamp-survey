@@ -1,6 +1,7 @@
 # Survey - freeCodeCamp Project
 
 Page link: https://boogiebouncemma.github.io/freeCodeCamp-survey/
+
 This project was created as part of "Responsive Web Design" certificate available at freeCodeCamp.org.
 
 ## Project summary:
