@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
+
+* {
+  margin: 0px;
+  font-family: 'Lato', sans-serif;
+}
+
+#title, #description {
+  text-align: center;
+  color: #3c542a;
+}
+#title {
+  margin-top: 5%;
+}
+#description {
+  margin-bottom: 20px;
+}
+
+#form-container {
+  width: 100%;
+  background:  #cfde83;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "name        name"
+    "input-name  input-name"
+    "email       email"
+    "input-email input-email"
+    "age         gender"
+    "input-age   input-gender"
+    "animals     animals"
+    "animal-choices     animal-choices"
+    "survey      survey"
+    "survey-choices survey-choices"
+    "feedback    feedback"
+    "input-feed  input-feed"
+    "submit      submit";
+  padding: 10px 20px;
+  margin: auto;
+  width: 50%;
+}
+
+form * {
+  margin: 0px 10px 0px 10px;
+}
+
+.form-label {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #2c401f;
+}
+
+.text-area, #submit {
+  padding: 2px 4px 2px 4px;
+}
+
+#name-label {
+  grid-area: name;
+}
+
+#name {
+  grid-area: input-name;
+}
+
+#email-label {
+  grid-area: email;
+}
+
+#email {
+  grid-area: input-email;
+}
+
+#number-label {
+  grid-area: age;
+}
+
+#number {
+  grid-area: input-age;
+}
+
+#dropdown-label {
+  grid-area: gender;
+}
+#dropdown {
+  grid-area: input-gender;
+}
+
+#like-label {
+  grid-area: survey;
+}
+
+#like-choices {
+  grid-area: survey-choices;
+
+}
+#animal-label {
+  grid-area: animals;
+
+}
+#animal-choices {
+  grid-area: animal-choices;
+}
+
+#comments-label {
+  grid-area: feedback;
+}
+
+#comments {
+  grid-area: input-feed;
+}
+
+#submit {
+  grid-area: submit;
+  width: 30%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background: #f2ffe8;
+  border: 0.5px solid #3c542a;
+  transition: 0.3s;
+}
+
+#submit:hover {
+  padding: 8px;
+  margin-top: 14px;
+  margin-bottom: 4px;
+  background: #7fa663;
+  width: 35%;
+}
+
+@media (max-width:800px) {
+  form {
+    width: 70%;
+  }
+}
+
+@media (max-width:500px) {
+  form {
+    width: 100%;
+    padding: 10px 0px;
+  }
+}
